@@ -1,70 +1,61 @@
 ---
-title: Officia culpa tempor eu dolore dolor esse ex incididunt ea ullamco mollit occaecat cupidatat irure.
-description: Aliquip fugiat nostrud nulla eu exercitation culpa officia irure dolor elit eu duis. Irure exercitation ex ad id anim fugiat mollit magna et. Proident magna exercitation amet irure est anim dolore. Sint reprehenderit ullamco aliquip dolor veniam exercitation excepteur ex cupidatat aute fugiat dolore minim. Labore reprehenderit duis nostrud eu dolore consequat sit tempor nisi irure elit dolore irure culpa. Duis ea do quis magna adipisicing laboris officia Lorem pariatur. Deserunt ex cillum incididunt id esse ipsum.
-date: '2021-07-31'
-tags: nextjs,next,something-else,idk
+title: Langchain and Zapier Natural Language Actions
+date: '2023-04-10'
+tags: langchain,zapier,nla
 imageUrl: '/posts/test-article/example-image-1.jpeg'
 ---
 
-## HISTORY, PURPOSE AND USAGE
+LangChain + Zapier Natural Language Actions (NLA)
+=================================================
 
-Lorem ipsum, or lipsum as it is sometimes known, is dummy text used in laying out print, graphic or web designs. The passage is attributed to an unknown typesetter in the 15th century who is thought to have scrambled parts of Cicero's De Finibus Bonorum et Malorum for use in a type specimen book. It usually begins with:
+-   [![LangChain](https://blog.langchain.dev/content/images/size/w100/2023/01/parroticon.png)](https://blog.langchain.dev/author/langchain/)
 
-<Quote
-  content="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
-  author="Cicero"
-  cite="https://loremipsum.io/"
-/>
+#### [LangChain](https://blog.langchain.dev/author/langchain/)
 
-## HEDONIST ROOTS
+Mar 16, 2023 - 2 min read
 
-Until recently, the prevailing view assumed lorem ipsum was born as a nonsense text. “It's not Latin, though it looks like it, and it actually says nothing,” Before & After magazine [answered a curious reader](https://www.straightdope.com/columns/read/2290/what-does-the-filler-text-lorem-ipsum-mean/), “Its ‘words’ loosely approximate the frequency with which letters occur in English, which is why at a glance it looks pretty real.”
+![LangChain + Zapier Natural Language Actions (NLA)](https://blog.langchain.dev/content/images/size/w2000/2023/03/zapier.drawio.png)
 
-**As Cicero would put it, “Um, not so fast.”**
+We are super excited to team up with Zapier and integrate their new [Zapier NLA API](https://zapier.com/l/natural-language-actions) into LangChain, which you can now use with your agents and chains. With this integration, you have access to the 5k+ apps and 20k+ actions on Zapier's platform through a natural language API interface. This is extremely powerful and gives your LangChain agents seemingly limitless possibilities. Big shoutout to Mike Knoop and the rest of the Zapier team for helping with this integration. You can request access in the link shared above. What will you build?
 
-The placeholder text, beginning with the line “Lorem ipsum dolor sit amet, consectetur adipiscing elit”, looks like Latin because in its youth, centuries ago, it was Latin.
+Zapier NLA
+==========
 
-Richard McClintock, a Latin scholar from **Hampden-Sydney College**, is credited with discovering the source behind the ubiquitous filler text. In seeing a sample of lorem ipsum, his interest was piqued by consectetur—a genuine, albeit rare, Latin word. Consulting a Latin dictionary led McClintock to a passage from De Finibus Bonorum et Malorum (“On the Extremes of Good and Evil”), a first-century B.C. text from the Roman philosopher Cicero.
+NLA supports apps like Gmail, Salesforce, Trello, Slack, Asana, HubSpot, Google Sheets, Microsoft Teams, and thousands more apps: <https://zapier.com/apps>
 
-In particular, the garbled words of lorem ipsum bear an unmistakable resemblance to sections `1.10.32–33` of Cicero's work, with the most notable passage excerpted below:
+Zapier NLA handles ALL the underlying API auth and translation from natural language -> underlying API call -> return simplified output for LLMs. The key idea is you expose a set of actions via an oauth-like setup window, which you can then query and execute via a REST API.
 
-<Quote content="Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem." />
+NLA offers both API Key and OAuth for signing NLA API requests.
 
-McClintock's eye for detail certainly helped narrow the whereabouts of lorem ipsum's origin, however, the “how and when” still remain something of a mystery, with competing theories and timelines.
+1.  Server-side (API Key): for quickly getting started, testing, and production scenarios where LangChain will only use actions exposed in the developer's Zapier account (and will use the developer's connected accounts on [Zapier.com](http://zapier.com/))
+2.  User-facing (Oauth): for production scenarios where you are deploying an end-user facing application and LangChain needs access to end-user's exposed actions and connected accounts on [Zapier.com](http://zapier.com/)
 
-## Creation timelines for the standard lorem ipsum passage vary, with some citing the 15th century and others the 20th.
+Review [full docs](https://nla.zapier.com/api/v1/dynamic/docs) or reach out to <nla@zapier.com> for user-facing oauth developer support.
 
-So how did the classical Latin become so incoherent? According to McClintock, a 15th century typesetter likely scrambled part of Cicero's De Finibus in order to provide placeholder text to mockup various fonts for a type specimen book.
+LangChain Integration
+=====================
 
-- It's difficult to find examples of lorem ipsum in use before Letraset made it popular as a dummy text in the 1960s, although McClintock says he remembers coming across the lorem ipsum passage in a book of old metal type samples. So far he hasn't relocated where he once saw the passage, but the popularity of Cicero in the 15th century supports the theory that the filler text has been used for centuries.
-- And anyways, as Cecil Adams reasoned, “[Do you really] think graphic arts supply houses were hiring classics scholars in the 1960s?” Perhaps. But it seems reasonable to imagine that there was a version in use far before the age of Letraset.
+We've integrated Zapier NLA into a LangChain `Tool` and `Toolkit` in both python ([docs](https://langchain.readthedocs.io/en/latest/modules/utils/examples/zapier.html)) and typescript ([docs](https://hwchase17.github.io/langchainjs/docs/modules/agents/zapier_agent)). This gives your agents and chains superpowers.
 
-McClintock wrote to Before & After to explain his discovery;
+To use, simply retrieve an NLA API Key (see above), set the `ZAPIER_NLA_API_KEY` environment variable, then create a `Toolkit` and `agent`:
 
-<ArticleImage src="/posts/test-article/example-image-2.png" />
+```
+llm = OpenAI(temperature=0)
+zapier = ZapierNLAWrapper()
+toolkit = ZapierToolkit.from_zapier_nla_wrapper(zapier)
+agent = initialize_agent(toolkit.get_tools(), llm, agent="zero-shot-react-description", verbose=True)
 
-It's difficult to find examples of lorem ipsum in use before Letraset made it popular as a dummy text in the 1960s, although McClintock says he remembers coming across the lorem ipsum passage in a book of old metal type samples. So far he hasn't relocated where he once saw the passage, but the popularity of Cicero in the 15th century supports the theory that the filler text has been used for centuries.
+```
 
-And anyways, as Cecil Adams reasoned, “[Do you really] think graphic arts supply houses were hiring classics scholars in the 1960s?” Perhaps. But it seems reasonable to imagine that there was a version in use far before the age of Letraset.
+‌It's really that simple! The `ZapierToolkit` automatically registers all of your enabled Zapier actions as tools with the correct name and descriptions.
 
-<Code
-  code="process.stdin.resume();  
-process.stdin.setEncoding('utf-8');  
-  
-let inputString = '';  
-let currentLine = 0;  
-  
-process.stdin.on('data', inputStdin => {  
-    inputString += inputStdin;  
-});  
-  
-process.stdin.on('end', _ => {  
-    inputString = inputString.trim().split('\n').map(string => {  
-        return string.trim();  
-    });  
-      
-    main();      
-});  
-"
-  language="js"
-/>
+You can also register an individual action as a tool manually using the `ZapierNLARunAction` tool.
+
+To see this in action, look at the example below. This agent now has access to my email and slack, and is able to do some amazing feats. In this example, it's summarizing the latest email I received from a certain bank and sending it to a slack channel.
+
+![](https://blog.langchain.dev/content/images/2023/03/Screenshot-2023-03-14-at-9.42.03-PM.png)
+
+Next Steps
+==========
+
+We're hoping to make this as seamless an integration as possible so let us know if you have any feedback for hit any issues!
