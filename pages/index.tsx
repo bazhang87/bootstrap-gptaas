@@ -20,14 +20,14 @@ export default function Homepage({ posts }: InferGetStaticPropsType<typeof getSt
         <title>{EnvVars.SITE_NAME}</title>
         <meta
           name="description"
-          content="GPTaaS is on a mission to infuse AI into every workflow and team."
+          content="Tempor nostrud velit fugiat nostrud duis incididunt Lorem deserunt est tempor aute dolor ad elit."
         />
       </Head>
       <HomepageWrapper>
         <WhiteBackgroundContainer>
           <Hero />
           <Partners />
-          <BasicSection imageUrl="/demo-illustration-1.svg" title="Demo Illustration 1." overTitle="This is a test image">
+          <BasicSection imageUrl="/demo-illustration-1.svg" title="Lorem ipsum dolor sit amet consectetur." overTitle="sit amet gogo">
             <p>
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas, quidem error incidunt a doloremque voluptatem porro inventore
               voluptate quo deleniti animi laboriosam.{' '}
