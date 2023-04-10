@@ -10,7 +10,7 @@
     {
       "label": "Blog Posts",
       "name": "posts",
-      "path": "posts",
+      "path": "blog",
       "fields": [
         {
           "type": "string",
