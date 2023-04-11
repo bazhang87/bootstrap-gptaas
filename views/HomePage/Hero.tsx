@@ -14,7 +14,7 @@ export default function Hero() {
   return (
     <HeroWrapper>
       <Contents>
-        <CustomOverTitle>GPTaaS aims to help teams augment and automate workflows with the power of Generative AI.</CustomOverTitle>
+        <CustomOverTitle>GPTaaS aims to augment teams and workflows with the power of Generative AI.</CustomOverTitle>
         <Heading>GPTaaS brings the next generation of AI to teams today.</Heading>
         <Description>
           GPTaaS combines state-of-the-art LLMs, ReAct-powered LLM chains, and an extensive plugin and tools ecosystem to power AI-based workflows for every team.
