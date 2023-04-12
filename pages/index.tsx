@@ -29,11 +29,8 @@ export default function Homepage({ posts }: InferGetStaticPropsType<typeof getSt
           <Partners />
           <BasicSection imageUrl="/demo-illustration-1.svg" title="Lorem ipsum dolor sit amet consectetur." overTitle="sit amet gogo">
             <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas, quidem error incidunt a doloremque voluptatem porro inventore
-              voluptate quo deleniti animi laboriosam.{' '}
-              <Link href="/help-center">Possimus ullam velit rem itaque consectetur, in distinctio?</Link> Lorem ipsum, dolor sit amet
-              consectetur adipisicing elit. Soluta repellendus quia quos obcaecati nihil. Laudantium non accusantium, voluptate eum nesciunt
-              at suscipit quis est soluta?
+            Introducing GPTaaS – the leading GPT integration service for SaaS businesses. Our team of expert developers and data scientists specialize in helping SaaS businesses seamlessly integrate GPT into their workflows, unlocking the full potential of this game-changing technology. With GPTaaS, you can automate customer support, optimize marketing campaigns, improve product offerings, and much more. Our team will work closely with your business to identify opportunities for GPT integration and implement solutions tailored to your specific needs. We understand that every SaaS business is unique, and that's why we take a personalized approach to each project we work on. Whether you're a startup or a large enterprise, our team has the expertise to help you succeed in today's rapidly evolving technology landscape.{' '}
+              <Link href="/contact">Get started with GPTaaS today and experience the power of GPT in your business workflows!</Link>
             </p>
           </BasicSection>
           <BasicSection imageUrl="/demo-illustration-2.svg" title="Lorem ipsum dolor sit." overTitle="lorem ipsum" reversed>

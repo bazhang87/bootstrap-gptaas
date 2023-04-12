@@ -20,7 +20,7 @@ const FEATURES = [
   },
   {
     imageUrl: '/grid-icons/asset-3.svg',
-    title: 'LLM-Chain Powered Lead Generation',
+    title: 'GPTaaS-Powered Lead Generation',
     description:
       'Automate lead generation and qualification with GPTaaS, helping software sellers identify and prioritize leads, increasing sales productivity and conversion rates.',
   },
@@ -32,9 +32,9 @@ const FEATURES = [
   },
   {
     imageUrl: '/grid-icons/asset-5.svg',
-    title: 'Lorem ipsum dolor sit amet.',
+    title: 'AI-Powered Personalization',
     description:
-      'Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis error dolorem ipsa dolore facere est consequuntur aut, eos doloribus voluptate?',
+      'GPTaaS can assist enterprise organizations in providing personalized onboarding experiences for their customers, analyzing customer data to recommend the best product features and providing customized training and support.',
   },
   {
     imageUrl: '/grid-icons/asset-6.svg',
