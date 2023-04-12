@@ -10,25 +10,25 @@ import { media } from 'utils/media';
 
 const TABS = [
   {
-    title: 'Find relevant media contacts - multiline title',
+    title: 'Enhanced Customer Experiences',
     description:
-      '<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam quidem ipsam ratione dicta quis cupiditate consequuntur laborum ducimus iusto velit.</p>',
+      '<p>With GPTaaS, businesses can leverage the power of GPT technology to create personalized, conversational interactions with their customers. By integrating GPT models into their workflows, businesses can automate customer support, generate more engaging content, and provide targeted product recommendations, resulting in higher customer satisfaction and retention rates.</p>',
     imageUrl: '/demo-illustration-3.png',
     baseColor: '249,82,120',
     secondColor: '221,9,57',
   },
   {
-    title: 'Another amazing feature',
+    title: 'Increased Efficiency and Productivity',
     description:
-      '<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam quidem ipsam ratione dicta quis cupiditate consequuntur laborum ducimus iusto velit.</p>',
+      '<p>GPTaaS can help businesses automate time-consuming tasks, such as content creation, lead generation, and marketing campaign optimization. By freeing up employee schedules, businesses can increase their productivity and focus on more high-value activities. This can result in cost savings, improved operational efficiency, and faster time-to-market for new products and services.</p>',
     imageUrl: '/demo-illustration-4.png',
     baseColor: '57,148,224',
     secondColor: '99,172,232',
   },
   {
-    title: 'And yet... another truly fascinating feature',
+    title: 'Improved Decision Making',
     description:
-      '<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam quidem ipsam ratione dicta quis cupiditate consequuntur laborum ducimus iusto velit.</p>',
+      '<p>With GPTaaS, businesses can leverage the power of GPT models to gain deeper insights into customer preferences, behaviors, and sentiment. By analyzing large amounts of data and generating accurate predictions, businesses can make more informed decisions that are backed by data. This can lead to improved business outcomes, such as increased revenue, improved customer retention, and reduced churn rates.</p>',
     imageUrl: '/demo-illustration-5.png',
     baseColor: '88,193,132',
     secondColor: '124,207,158',
