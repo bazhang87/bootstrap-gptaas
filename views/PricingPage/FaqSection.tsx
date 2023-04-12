@@ -6,33 +6,32 @@ export default function FaqSection() {
   return (
     <Wrapper>
       <SectionTitle>Frequently asked question</SectionTitle>
-      <Accordion title="Eiusmod eu laboris qui minim incididunt et id in elit veniam Lorem nulla ullamco.">
-        Voluptate ad aliquip in adipisicing incididunt officia. Aliqua consectetur id commodo fugiat sunt dolor minim. Aliqua ut deserunt
-        sit irure tempor esse labore elit commodo pariatur in nisi minim culpa. Exercitation eu in mollit tempor cillum excepteur
-        adipisicing cillum do et dolor est deserunt dolor. Deserunt reprehenderit nulla commodo quis et consectetur deserunt ea eiusmod
-        reprehenderit aliqua. Cupidatat commodo do ad ullamco ad enim sint sint irure amet culpa. Consequat sit Lorem sint culpa.
+      <Accordion title="What is GPTaaS?">
+        GPTaaS is a service that helps SaaS businesses integrate GPT technology into their workflows to enhance their customer experiences and business operations.
       </Accordion>
-      <Accordion title="Minim eiusmod aliquip in ea mollit fugiat ullamco veniam enim sint exercitation.">
-        Lorem laboris ullamco labore consectetur duis amet excepteur esse labore sunt pariatur do aliqua amet. Enim exercitation labore
-        nostrud consectetur veniam eiusmod pariatur do commodo dolore pariatur amet veniam. Irure do et ut dolor quis reprehenderit anim
-        aute sint deserunt tempor sunt nostrud. Deserunt et aute non dolor.
+      <Accordion title="How much does GPTaaS cost?">
+        The cost of GPTaaS depends on the plan that you choose. Our Basic Plan starts at $1,000 per month, the Pro Plan starts at $5,000 per month, and the Enterprise Plan starts at $10,000 per month.
       </Accordion>
-      <Accordion title="Commodo officia dolore anim occaecat.">
-        Enim ea cillum pariatur incididunt incididunt sunt ea exercitation nisi aliquip. Cillum deserunt ut esse Lorem non qui labore labore
-        eiusmod magna incididunt ut quis. Nulla excepteur adipisicing ipsum do non occaecat.
+      <Accordion title="What does each plan include?">
+        The Basic Plan includes access to basic GPT integration services such as customer support automation, content creation, and lead generation. The Pro Plan includes more advanced services such as marketing campaign optimization, personalized recommendations, and sentiment analysis. The Enterprise Plan includes access to all GPT integration services, including custom solutions and dedicated support.
       </Accordion>
-      <Accordion title="Irure Lorem proident esse enim.">
-        Ipsum laboris sit minim occaecat nisi qui. Tempor eiusmod fugiat occaecat labore. Exercitation do cillum cillum laborum velit
-        laborum ea magna duis laborum in anim. Enim laboris dolore laboris consectetur enim duis deserunt consequat excepteur ipsum
-        excepteur. Non dolor magna et est cillum sint eiusmod sit eiusmod veniam id. Aliqua non non labore amet laborum fugiat ad nostrud ex
-        officia exercitation.
+      <Accordion title="Are there any setup fees?">
+        Yes, there is a one-time setup fee for each plan to cover the cost of onboarding and customizing the integration for each customer. This varies depending on the volume and complexity of workflows, integrations and use cases being addressed.
       </Accordion>
-      <Accordion title="Ea quis consequat sunt sint aute pariatur aliquip minim voluptate.">
-        Sint eiusmod aute nulla ut esse sunt fugiat nulla exercitation duis pariatur. Magna anim incididunt magna id quis irure laborum sint
-        voluptate tempor esse elit dolore. Elit exercitation pariatur adipisicing aute. Nisi deserunt enim consequat anim adipisicing
-        laborum sint occaecat elit. Consequat officia cupidatat magna incididunt nisi in sunt duis reprehenderit ullamco in amet cillum.
-        Dolor nisi proident ipsum aute velit aliquip magna fugiat reprehenderit. Enim ex aliqua et velit exercitation reprehenderit veniam
-        do eu exercitation ad duis.
+      <Accordion title="Can I add custom solutions or additional services to my plan?">
+        Yes, additional services can be added to any plan for an additional fee. Custom solutions are also available for an additional fee.
+      </Accordion>
+      <Accordion title="Can I change my plan?">
+        Yes, you can change your plan at any time to a plan that better suits your needs. You will charged on a pro-rated basis to cover the difference between your current and former plan for the remainder of your contract.      
+      </Accordion>
+      <Accordion title="What timelines do you provide within your contracts?">
+        GPTaaS contracts can be signed on a monthly, annual, or multi-year basis. Discounts may be available for annual or multi-year contracts.
+      </Accordion>
+      <Accordion title="Do you offer a free trial?">
+        Yes, we offer a 14-day free trial for all plans. During the trial period, you can test our GPT integration services and decide whether they are right for your business.
+      </Accordion>
+      <Accordion title="How do I get started??">
+        You can contact us to schedule a demo and discuss your business needs. We will then recommend a plan that best suits your needs and provide you with a quote.
       </Accordion>
     </Wrapper>
   );
