@@ -27,15 +27,15 @@ export default function Homepage({ posts }: InferGetStaticPropsType<typeof getSt
         <WhiteBackgroundContainer>
           <Hero />
           <Partners />
-          <BasicSection imageUrl="/demo-illustration-1.svg" title="Demo" overTitle="Demo">
+          <BasicSection imageUrl="/demo-illustration-1.svg" title="How we accelerate businesses with AI" overTitle="What can GPTaaS help you accomplish?">
             <p>
               With GPTaaS, you can easily integrate the power of GPT technology into your workflows and reap the benefits of improved customer experiences, increased efficiency and productivity, and informed decision making.{' '}
-              <Link href="/help-center">Are you ready to take your SaaS business to the next level?</Link> Contact us today to learn more about our services and how we can help you drive business growth with GPT.
+              <Link href="/contact">Are you ready to take your SaaS business to the next level?</Link> Contact us today to learn more about our services and how we can help you drive business growth with GPT.
             </p>
           </BasicSection>
-          <BasicSection imageUrl="/demo-illustration-2.svg" title="Demo" overTitle="Demo" reversed>
+          <BasicSection imageUrl="/demo-illustration-2.svg" title="GPTaaS in a nutshell" overTitle="Who we are" reversed>
             <p>
-              GPTaaS is a cutting-edge technology service that brings the power of GPT models to SaaS businesses of all sizes. By integrating GPT technology into your workflows, GPTaaS can help your team automate time-consuming tasks, increase efficiency and productivity, and improve decision making.{' '}
+              GPTaaS is a cutting-edge technology consulting team that brings the power of GPT models to SaaS businesses of all sizes. By integrating GPT technology into your workflows, GPTaaS can help your team automate time-consuming tasks, increase efficiency and productivity, and improve decision making.{' '}
               <strong>GPTaaS accelerates better business outcomes</strong>. We specialize in automating AI-powered workflows for teams of all sizes.
             </p>
             <ul>
