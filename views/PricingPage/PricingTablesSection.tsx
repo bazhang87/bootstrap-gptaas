@@ -10,32 +10,32 @@ export default function PricingTablesSection() {
       <SectionTitle>Flexible pricing for agile teams</SectionTitle>
       <AutofitGrid>
         <PricingCard
-          title="PoC/MVP"
-          description="Connect with us to discuss GPTaaS Pilot Projects and MVPs"
-          benefits={['1 workflow/agent', '1 active project', 'Demo only', '30-day window']}
+          title="Basic Plan"
+          description="This plan is designed for small and medium-sized businesses looking to integrate GPT into their workflows."
+          benefits={['Access to basic GPT integration services', 'Customer Support Automation', 'Content Creation', 'Lead Generation']}
         >
-          $0<span>/month</span>
+          $1000<span>/month</span>
         </PricingCard>
         <PricingCard
-          title="Starter"
-          description=""
-          benefits={['5 workflows/agents', '3 active projects', 'Unlimited Usage', '1-yr subscription', 'Pay-As-You-Go LLM Hosting']}
+          title="Pro Plan"
+          description="This plan is ideal for larger SMBs or mid-sized companies looking to take their GPT integration to the next level."
+          benefits={['Access to more advanced GPT integration services', 'Marketing Campaign Optimization', 'Personalized Recommendations', 'Sentiment Analysis', 'Pay-As-You-Go LLM Hosting']}
           isOutlined
         >
-          $299<span>/month</span>
+          $5000<span>/month</span>
         </PricingCard>
         <PricingCard
-          title="Enterprise"
+          title="Enterprise Plan"
           description="Transform your organization with GPTaaS"
           benefits={[
-            'Unlimited workflows/agents',
-            'Unlimited active projects',
-            'Unlimited usage',
+            'Access to all GPT integration services',
+            'Custom solutions and GPT-powered Workflows',
+            'Dedicated Support',
             '3-yr Enterprise Agreement',
             'Pay-As-You-Go LLM Hosting'
           ]}
         >
-          Contact Us<span>/month</span>
+          $10000<span>/month*</span>
         </PricingCard>
       </AutofitGrid>
     </Wrapper>
