@@ -65,10 +65,10 @@ const FEATURES = [
 
 export default function FeaturesPage() {
   return (
-    <Page title="Features" description="Elit aute do nisi Lorem id ea culpa sint duis eu tempor dolore elit.">
+    <Page title="Partner Technologies" description="This page details the technologies we leverage in our workflow automation services">
       <Wrapper>
-        <SectionTitle>Check out this quick introduction</SectionTitle>
-        <YoutubeVideo url="https://www.youtube.com/watch?v=BggrpKfqh1c" />
+        <SectionTitle>Watch this video from Fireship on the latest developments in GPT technology, including BabyAGI, AutoGPT, and Jarvis.</SectionTitle>
+        <YoutubeVideo url="https://www.youtube.com/watch?v=_rGXIXyNqpk" />
         <CustomAutofitGrid>
           {FEATURES.map((singleFeature, idx) => (
             <BasicCard key={singleFeature.title} {...singleFeature} />
