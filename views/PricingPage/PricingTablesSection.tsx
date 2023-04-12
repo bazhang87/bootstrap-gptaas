@@ -10,34 +10,32 @@ export default function PricingTablesSection() {
       <SectionTitle>Flexible pricing for agile teams</SectionTitle>
       <AutofitGrid>
         <PricingCard
-          title="free"
-          description="Give us a try for free"
-          benefits={['1 seat', '1 active project', 'Ulimited viewers', '10 blocks']}
+          title="PoC/MVP"
+          description="Connect with us to discuss GPTaaS Pilot Projects and MVPs"
+          benefits={['1 workflow/agent', '1 active project', 'Demo only', '30-day window']}
         >
           $0<span>/month</span>
         </PricingCard>
         <PricingCard
           title="Starter"
-          description="Best for individual desginers"
-          benefits={['1 seat', '3 active project', 'Ulimited viewers', '100 blocks', 'CSV Downloader', 'Password protection']}
+          description=""
+          benefits={['5 workflows/agents', '3 active projects', 'Unlimited Usage', '1-yr subscription', 'Pay-As-You-Go LLM Hosting']}
           isOutlined
         >
-          $29<span>/month</span>
+          $299<span>/month</span>
         </PricingCard>
         <PricingCard
-          title="Premium"
-          description="Get your team together"
+          title="Enterprise"
+          description="Transform your organization with GPTaaS"
           benefits={[
-            '10 seat',
-            '10 active project',
-            'Ulimited viewers',
-            'Unlimited blocks',
-            'CSV Downloader',
-            'Password protection',
-            'Customization',
+            'Unlimited workflows/agents',
+            'Unlimited active projects',
+            'Unlimited usage',
+            '3-yr Enterprise Agreement',
+            'Pay-As-You-Go LLM Hosting'
           ]}
         >
-          $79<span>/month</span>
+          Contact Us<span>/month</span>
         </PricingCard>
       </AutofitGrid>
     </Wrapper>
