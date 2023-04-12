@@ -13,11 +13,10 @@ export default function Cta() {
     <CtaWrapper>
       <Container>
         <Stack>
-          <OverTitle>Lorem ipsum dolor sit amet</OverTitle>
-          <SectionTitle>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Temporibus delectus?</SectionTitle>
+          <OverTitle>Contact our team today</OverTitle>
+          <SectionTitle>Are you ready to accelerate your AI-powered journey?</SectionTitle>
           <Description>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda beatae accusamus deleniti nihil quas tempora numquam, vitae
-            culpa.
+            We're ready to help you and your team accelerate every aspect of your business growth with the power of AI.
           </Description>
           <ButtonGroup>
             <NextLink href="#early-access" passHref>
