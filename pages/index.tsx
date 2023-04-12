@@ -20,31 +20,28 @@ export default function Homepage({ posts }: InferGetStaticPropsType<typeof getSt
         <title>{EnvVars.SITE_NAME}</title>
         <meta
           name="description"
-          content="Tempor nostrud velit fugiat nostrud duis incididunt Lorem deserunt est tempor aute dolor ad elit."
+          content="GPTaaS is a leading AI-integrator in the Generative AI space."
         />
       </Head>
       <HomepageWrapper>
         <WhiteBackgroundContainer>
           <Hero />
           <Partners />
-          <BasicSection imageUrl="/demo-illustration-1.svg" title="Lorem ipsum dolor sit amet consectetur." overTitle="sit amet gogo">
+          <BasicSection imageUrl="/demo-illustration-1.svg" title="Demo" overTitle="Demo">
             <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas, quidem error incidunt a doloremque voluptatem porro inventore
-              voluptate quo deleniti animi laboriosam.{' '}
-              <Link href="/help-center">Possimus ullam velit rem itaque consectetur, in distinctio?</Link> Lorem ipsum, dolor sit amet
-              consectetur adipisicing elit. Soluta repellendus quia quos obcaecati nihil. Laudantium non accusantium, voluptate eum nesciunt
-              at suscipit quis est soluta?
+              With GPTaaS, you can easily integrate the power of GPT technology into your workflows and reap the benefits of improved customer experiences, increased efficiency and productivity, and informed decision making.{' '}
+              <Link href="/help-center">Are you ready to take your SaaS business to the next level?</Link> Contact us today to learn more about our services and how we can help you drive business growth with GPT.
             </p>
           </BasicSection>
-          <BasicSection imageUrl="/demo-illustration-2.svg" title="Lorem ipsum dolor sit." overTitle="lorem ipsum" reversed>
+          <BasicSection imageUrl="/demo-illustration-2.svg" title="Demo" overTitle="Demo" reversed>
             <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas, quidem error incidunt a doloremque voluptatem porro inventore{' '}
-              <strong>voluptate quo deleniti animi laboriosam</strong>. Possimus ullam velit rem itaque consectetur, in distinctio?
+              GPTaaS is a cutting-edge technology service that brings the power of GPT models to SaaS businesses of all sizes. By integrating GPT technology into your workflows, GPTaaS can help your team automate time-consuming tasks, increase efficiency and productivity, and improve decision making.{' '}
+              <strong>GPTaaS accelerates better business outcomes</strong>. We specialize in automating AI-powered workflows for teams of all sizes.
             </p>
             <ul>
-              <li>Professional point 1</li>
-              <li>Professional remark 2</li>
-              <li>Professional feature 3</li>
+              <li>GPTaaS automates workflows and improves efficiency.</li>
+              <li>GPTaaS enhances customer experiences through hyper-personalization and process automation.</li>
+              <li>GPTaaS provides data insights that drive informed decision making.</li>
             </ul>
           </BasicSection>
         </WhiteBackgroundContainer>
