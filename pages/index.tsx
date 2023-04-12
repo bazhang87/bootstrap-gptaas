@@ -35,13 +35,13 @@ export default function Homepage({ posts }: InferGetStaticPropsType<typeof getSt
           </BasicSection>
           <BasicSection imageUrl="/demo-illustration-2.svg" title="Lorem ipsum dolor sit." overTitle="lorem ipsum" reversed>
             <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas, quidem error incidunt a doloremque voluptatem porro inventore{' '}
-              <strong>voluptate quo deleniti animi laboriosam</strong>. Possimus ullam velit rem itaque consectetur, in distinctio?
+            Revolutionize your SaaS business with GPTaaS – the premier GPT integration service for businesses of all sizes. Our team of expert developers and data scientists has years of experience helping businesses integrate GPT into their workflows, driving efficiency, productivity, and growth.{' '}
+              <strong>With GPTaaS, you can automate tasks, optimize workflows, and improve customer experiences. </strong>. Contact our team today and experience the power of GPT in your business workflows.
             </p>
             <ul>
-              <li>Professional point 1</li>
-              <li>Professional remark 2</li>
-              <li>Professional feature 3</li>
+              <li>Optimize workflows with GPT</li>
+              <li>Augment customer and team member experiences with GPT</li>
+              <li>Accelerate growth with GPT</li>
             </ul>
           </BasicSection>
         </WhiteBackgroundContainer>
