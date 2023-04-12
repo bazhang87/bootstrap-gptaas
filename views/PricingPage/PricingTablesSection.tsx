@@ -12,23 +12,22 @@ export default function PricingTablesSection() {
         <PricingCard
           title="Basic"
           description="This plan is designed for small and medium-sized businesses looking to integrate GPT into their workflows."
-          benefits={['Access to basic GPT integration services', 'Customer Support Automation', 'Content Creation', 'Lead Generation']}
+          benefits={['Customer Support Automation', 'Content Creation', 'Lead Generation']}
         >
-          1000<span>/month</span>
+          1000<span>/month*</span>
         </PricingCard>
         <PricingCard
           title="Pro"
           description="This plan is ideal for larger SMBs or mid-sized companies looking to take their GPT integration to the next level."
-          benefits={['Access to more advanced GPT integration services', 'Marketing Campaign Optimization', 'Personalized Recommendations', 'Sentiment Analysis', 'Pay-As-You-Go LLM Hosting']}
+          benefits={['Marketing Campaign Optimization', 'Personalized Recommendations', 'Sentiment Analysis', 'Pay-As-You-Go LLM Hosting']}
           isOutlined
         >
-          5000<span>/month</span>
+          5000<span>/month*</span>
         </PricingCard>
         <PricingCard
           title="Enterprise"
           description="Transform your organization with GPTaaS"
           benefits={[
-            'Access to all GPT integration services',
             'Custom solutions and GPT-powered Workflows',
             'Dedicated Support',
             '3-yr Enterprise Agreement',
